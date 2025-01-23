@@ -1,7 +1,6 @@
 
 import { FC } from 'react'
 import {KTIcon, toAbsoluteUrl} from '../../../helpers'
-import {Dropdown1} from '../../content/dropdown/Dropdown1'
 
 type Props = {
   className: string
@@ -28,7 +27,6 @@ const ListsWidget4: FC<Props> = ({items = 6}) => {
           >
             <KTIcon iconName='category' className='fs-2' />
           </button>
-          <Dropdown1 />
           {/* end::Menu */}
         </div>
       </div>

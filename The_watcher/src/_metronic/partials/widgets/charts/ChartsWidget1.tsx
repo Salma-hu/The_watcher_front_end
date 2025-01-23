@@ -2,7 +2,6 @@
 import {useEffect, useRef, FC} from 'react'
 import ApexCharts, {ApexOptions} from 'apexcharts'
 import {KTIcon} from '../../../helpers'
-import {Dropdown1} from '../../content/dropdown/Dropdown1'
 import {getCSS, getCSSVariableValue} from '../../../assets/ts/_utils'
 import {useThemeMode} from '../../layout/theme-mode/ThemeModeProvider'
 
@@ -63,7 +62,6 @@ const ChartsWidget1: FC<Props> = ({className}) => {
           >
             <KTIcon iconName='category' className='fs-2' />
           </button>
-          <Dropdown1 />
           {/* end::Menu */}
         </div>
         {/* end::Toolbar */}

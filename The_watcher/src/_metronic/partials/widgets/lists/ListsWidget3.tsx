@@ -1,7 +1,6 @@
 
 import React from 'react'
 import {KTIcon} from '../../../helpers'
-import {Dropdown1} from '../../content/dropdown/Dropdown1'
 
 type Props = {
   className: string
@@ -24,7 +23,6 @@ const ListsWidget3: React.FC<Props> = ({className}) => {
           >
             <KTIcon iconName='category' className='fs-2' />
           </button>
-          <Dropdown1 />
           {/* end::Menu */}
         </div>
       </div>
