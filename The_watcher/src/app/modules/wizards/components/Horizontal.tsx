@@ -70,9 +70,32 @@ const Horizontal: FC = () => {
           <div
             ref={stepperRef}
             className='stepper stepper-links d-flex flex-column pt-15'
-            id='kt_create_account_stepper'
-          >
-            <div className='stepper-nav mb-5'>
+            id='kt_create_account_stepper'>
+
+            <Formik validationSchema={currentSchema} initialValues={initValues} onSubmit={submitStep}>
+              {() => (
+                <Form className='py-20 w-100 w-xl-700px px-9' noValidate id='kt_create_account_form'>
+                  {/* Display only Step3 */}
+                  <div className='current' data-kt-stepper-element='content'>
+                    <Step3 />
+                  </div>
+
+                  {/* Submit button */}
+                  <div className='d-flex flex-stack pt-10'>
+                    <div>
+                      <button type='submit' className='btn btn-lg btn-primary me-3'>
+                        <span className='indicator-label'>
+                            Apply
+                          <KTIcon iconName='arrow-right' className='fs-3 ms-2 me-0' />
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </Form>
+              )}
+            </Formik>
+  
+            {/* <div className='stepper-nav mb-5'>
               <div className='stepper-item current' data-kt-stepper-element='nav'>
                 <h3 className='stepper-title'>Account Type</h3>
               </div>
@@ -92,9 +115,9 @@ const Horizontal: FC = () => {
               <div className='stepper-item' data-kt-stepper-element='nav'>
                 <h3 className='stepper-title'>Completed</h3>
               </div>
-            </div>
+            </div> */}
 
-            <Formik validationSchema={currentSchema} initialValues={initValues} onSubmit={submitStep}>
+            {/* <Formik validationSchema={currentSchema} initialValues={initValues} onSubmit={submitStep}>
               {() => (
                 <Form className='mx-auto mw-600px w-100 pt-15 pb-10' id='kt_create_account_form'>
                   <div className='current' data-kt-stepper-element='content'>
@@ -142,7 +165,7 @@ const Horizontal: FC = () => {
                   </div>
                 </Form>
               )}
-            </Formik>
+            </Formik> */}
           </div>
         </div>
       </div>

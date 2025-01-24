@@ -18,7 +18,8 @@ const SidebarMenuMain = () => {
 
       <SidebarMenuItemWithSub to='/crafted/pages' title='Scanner Setup' fontIcon='bi-archive' icon='element-plus'>
 
-        <SidebarMenuItem to='/crafted/pages/wizards' title='Scan Scope' hasBullet={true}/>
+        {/* <SidebarMenuItem to='/crafted/pages/wizards' title='Scan Scope' hasBullet={true}/> */}
+        <SidebarMenuItem to='crafted/pages/wizards/horizontal' title='Scan Scope' hasBullet={true}/>
         <SidebarMenuItem to='/crafted/pages/profile' title='Scan History' hasBullet={true}/>
 
       </SidebarMenuItemWithSub>

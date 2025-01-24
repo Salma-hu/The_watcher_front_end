@@ -4,7 +4,7 @@ import {Field, ErrorMessage} from 'formik'
 const Step3: FC = () => {
   return (
     <div className='w-100'>
-      <div className='pb-10 pb-lg-12'>
+      {/* <div className='pb-10 pb-lg-12'>
         <h2 className='fw-bolder text-gray-900'>Business Details</h2>
 
         <div className='text-gray-500 fw-bold fs-6'>
@@ -15,10 +15,10 @@ const Step3: FC = () => {
           </a>
           .
         </div>
-      </div>
+      </div> */}
 
       <div className='fv-row mb-10'>
-        <label className='form-label required'>Business Name</label>
+        <label className='form-label required'>Merket cap (USD)</label>
 
         <Field name='businessName' className='form-control form-control-lg form-control-solid' />
         <div className='text-danger mt-2'>
@@ -28,7 +28,21 @@ const Step3: FC = () => {
 
       <div className='fv-row mb-10'>
         <label className='d-flex align-items-center form-label'>
-          <span className='required'>Shortened Descriptor</span>
+          <span className='required'>Liquidity (USD)</span>
+        </label>
+
+        <Field
+          name='businessDescriptor'
+          className='form-control form-control-lg form-control-solid'
+        />
+        <div className='text-danger mt-2'>
+          
+        </div>
+      </div>
+
+      <div className='fv-row mb-10'>
+        <label className='d-flex align-items-center form-label'>
+          <span className='required'>Burned SOL</span>
         </label>
 
         <Field
@@ -38,14 +52,24 @@ const Step3: FC = () => {
         <div className='text-danger mt-2'>
           <ErrorMessage name='businessDescriptor' />
         </div>
-
-        <div className='form-text'>
-          Customers will see this shortened version of your statement descriptor
-        </div>
       </div>
 
       <div className='fv-row mb-10'>
-        <label className='form-label required'>Corporation Type</label>
+        <label className='d-flex align-items-center form-label'>
+          <span className='required'>Supply</span>
+        </label>
+
+        <Field
+          name='Supply'
+          className='form-control form-control-lg form-control-solid'
+        />
+        <div className='text-danger mt-2'>
+          <ErrorMessage name='businessDescriptor' />
+        </div>
+      </div>
+
+      {/* <div className='fv-row mb-10'>
+        <label className='form-label required'>Burned SOL</label>
 
         <Field
           as='select'
@@ -63,9 +87,9 @@ const Step3: FC = () => {
         <div className='text-danger mt-2'>
           <ErrorMessage name='businessType' />
         </div>
-      </div>
+      </div> */}
 
-      <div className='fv-row mb-10'>
+      {/* <div className='fv-row mb-10'>
         <label className='form-label'>Business Description</label>
 
         <Field
@@ -74,16 +98,16 @@ const Step3: FC = () => {
           className='form-control form-control-lg form-control-solid'
           rows={3}
         ></Field>
-      </div>
+      </div> */}
 
-      <div className='fv-row mb-0'>
+      {/* <div className='fv-row mb-0'>
         <label className='fs-6 fw-bold form-label required'>Contact Email</label>
 
         <Field name='businessEmail' className='form-control form-control-lg form-control-solid' />
         <div className='text-danger mt-2'>
           <ErrorMessage name='businessEmail' />
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

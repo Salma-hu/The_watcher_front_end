@@ -205,7 +205,29 @@ const Vertical = () => {
           {/* begin::Aside*/}
 
           <div className='d-flex flex-row-fluid flex-center bg-body rounded'>
-            <Formik validationSchema={currentSchema} initialValues={initValues} onSubmit={submitStep}>
+          <Formik validationSchema={currentSchema} initialValues={initValues} onSubmit={submitStep}>
+          {() => (
+            <Form className='py-20 w-100 w-xl-700px px-9' noValidate id='kt_create_account_form'>
+              {/* Display only Step3 */}
+              <div className='current' data-kt-stepper-element='content'>
+                <Step3 />
+              </div>
+
+              {/* Submit button */}
+              <div className='d-flex flex-stack pt-10'>
+                <div>
+                  <button type='submit' className='btn btn-lg btn-primary me-3'>
+                    <span className='indicator-label'>
+                      Submit
+                      <KTIcon iconName='arrow-right' className='fs-3 ms-2 me-0' />
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </Form>
+          )}
+        </Formik>
+            {/* <Formik validationSchema={currentSchema} initialValues={initValues} onSubmit={submitStep}>
               {() => (
                 <Form className='py-20 w-100 w-xl-700px px-9' noValidate id='kt_create_account_form'>
                   <div className='current' data-kt-stepper-element='content'>
@@ -253,7 +275,7 @@ const Vertical = () => {
                   </div>
                 </Form>
               )}
-            </Formik>
+            </Formik> */}
           </div>
         </div>
       </Content>
