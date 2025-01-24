@@ -141,10 +141,7 @@ const MenuTestPage: FC = () => {
                               </a>
                             </div>
                             <div className='menu-item'>
-                              <a
-                                className='menu-link py-3'
-                                href='/keenthemes/products/themes/start/html/demo1/dist/?page=pages/profile/documents'
-                              >
+                              <a className='menu-link py-3'href='/keenthemes/products/themes/start/html/demo1/dist/?page=pages/profile/documents'>
                                 <span className='menu-bullet'>
                                   <span className='bullet bullet-dot'></span>
                                 </span>

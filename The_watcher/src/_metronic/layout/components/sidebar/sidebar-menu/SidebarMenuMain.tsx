@@ -43,18 +43,7 @@ const SidebarMenuMain = () => {
       <SidebarMenuItem to='/crafted/account/overview' title='Accounts' icon='profile-circle' fontIcon='bi-person'/>
 
       <SidebarMenuItem to='/apps/user-management/users' icon='abstract-28' title='User management' fontIcon='bi-layers' />
-      <div className='menu-item'>
-        <a
-          target='_blank'
-          className='menu-link'
-          href={import.meta.env.VITE_APP_PREVIEW_DOCS_URL + '/changelog'}
-        >
-          <span className='menu-icon'>
-            <KTIcon iconName='code' className='fs-2' />
-          </span>
-          <span className='menu-title'>Changelog {import.meta.env.VITE_APP_VERSION}</span>
-        </a>
-      </div>
+
     </>
   )
 }

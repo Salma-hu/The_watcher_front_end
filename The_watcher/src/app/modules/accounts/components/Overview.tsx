@@ -1,8 +1,5 @@
 import {Link} from 'react-router-dom'
 import {KTIcon} from '../../../../_metronic/helpers'
-import {
-  ChartsWidget1,
-} from '../../../../_metronic/partials/widgets'
 import { Content } from '../../../../_metronic/layout/components/content'
 
 export function Overview() {
