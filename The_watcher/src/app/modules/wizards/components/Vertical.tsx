@@ -2,6 +2,7 @@ import {useEffect, useRef, useState} from 'react'
 import {KTIcon} from '../../../../_metronic/helpers'
 import {Step1} from './steps/Step1'
 import {Step2} from './steps/Step2'
+// import {FormikWrapper} from './steps/Step3'
 import {Step3} from './steps/Step3'
 import {Step4} from './steps/Step4'
 import {Step5} from './steps/Step5'
@@ -205,16 +206,19 @@ const Vertical = () => {
           {/* begin::Aside*/}
 
           <div className='d-flex flex-row-fluid flex-center bg-body rounded'>
-          <Formik validationSchema={currentSchema} initialValues={initValues} onSubmit={submitStep}>
+
+
+
+          {/* <Formik validationSchema={currentSchema} initialValues={initValues} onSubmit={submitStep}>
           {() => (
-            <Form className='py-20 w-100 w-xl-700px px-9' noValidate id='kt_create_account_form'>
-              {/* Display only Step3 */}
-              <div className='current' data-kt-stepper-element='content'>
+            <Form className='py-20 w-100 w-xl-700px px-9' noValidate id='kt_create_account_form'>*/}
+              {/* Display only Step3*/}
+              {/* <div className='current' data-kt-stepper-element='content'>
                 <Step3 />
-              </div>
+              </div>*/}
 
               {/* Submit button */}
-              <div className='d-flex flex-stack pt-10'>
+              {/* <div className='d-flex flex-stack pt-10'>
                 <div>
                   <button type='submit' className='btn btn-lg btn-primary me-3'>
                     <span className='indicator-label'>
@@ -226,7 +230,10 @@ const Vertical = () => {
               </div>
             </Form>
           )}
-        </Formik>
+        </Formik>  */}
+
+      
+
             {/* <Formik validationSchema={currentSchema} initialValues={initValues} onSubmit={submitStep}>
               {() => (
                 <Form className='py-20 w-100 w-xl-700px px-9' noValidate id='kt_create_account_form'>

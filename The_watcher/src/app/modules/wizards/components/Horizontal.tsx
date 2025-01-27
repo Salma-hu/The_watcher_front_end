@@ -65,8 +65,8 @@ const Horizontal: FC = () => {
     <>
       <ToolbarWrapper />
       <Content>
-      <div className='card'>
-        <div className='card-body'>
+      <div className='card mb-10'>
+        <div className='card-body mb-10'>
           <div
             ref={stepperRef}
             className='stepper stepper-links d-flex flex-column pt-15'
@@ -74,7 +74,7 @@ const Horizontal: FC = () => {
 
             <Formik validationSchema={currentSchema} initialValues={initValues} onSubmit={submitStep}>
               {() => (
-                <Form className='py-20 w-100 w-xl-700px px-9' noValidate id='kt_create_account_form'>
+                <Form className='w-50 w-xl-700px px-9' noValidate id='kt_create_account_form'>
                   {/* Display only Step3 */}
                   <div className='current' data-kt-stepper-element='content'>
                     <Step3 />
@@ -83,10 +83,11 @@ const Horizontal: FC = () => {
                   {/* Submit button */}
                   <div className='d-flex flex-stack pt-10'>
                     <div>
-                      <button type='submit' className='btn btn-lg btn-primary me-3'>
+                      <button type='submit' className='btn btn-lg btn-primary me-3 pb-4'>
                         <span className='indicator-label'>
                             Apply
-                          <KTIcon iconName='arrow-right' className='fs-3 ms-2 me-0' />
+                          
+                           {/* <KTIcon iconName='arrow-right' className='fs-3 ms-2 me-0' /> */}
                         </span>
                       </button>
                     </div>

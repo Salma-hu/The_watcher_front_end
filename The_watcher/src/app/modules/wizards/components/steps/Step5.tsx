@@ -26,7 +26,7 @@ const Step5: FC = () => {
         </div>
 
         <div className='notice d-flex bg-light-warning rounded border-warning border border-dashed p-6'>
-          <KTIcon iconName='information-5' className='fs-2tx text-warning me-4' />
+          <KTIcon iconName='information-5' className='fs-2tx text-warning me-4' /> 
           <div className='d-flex flex-stack flex-grow-1'>
             <div className='fw-bold'>
               <h4 className='text-gray-800 fw-bolder'>We need your attention!</h4>
