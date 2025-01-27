@@ -75,7 +75,7 @@ const AuthLayout = () => {
 
           {/* begin::Title */}
           <h1 className='text-white fs-2qx fw-bolder text-center mb-7'>
-            Fast, Efficient and Productive
+            Fast, Efficient and   ductive
           </h1>
           {/* end::Title */}
 

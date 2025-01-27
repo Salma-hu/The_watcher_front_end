@@ -50,7 +50,7 @@ const SidebarMenuMain = () => {
           <span className='menu-section text-muted text-uppercase fs-8 ls-1'>Settings</span>
         </div>
       </div>
-      <SidebarMenuItem to='/crafted/account/overview' title='Accounts' icon='profile-circle' fontIcon='bi-person'/>
+      {/* <SidebarMenuItem to='/crafted/account/overview' title='Accounts' icon='profile-circle' fontIcon='bi-person'/> */}
 
       <SidebarMenuItem to='/apps/user-management/users' icon='abstract-28' title='User management' fontIcon='bi-layers' />
 
