@@ -8,7 +8,7 @@ const SidebarMenuMain = () => {
 
   return (
     <>
-      <SidebarMenuItem to='/dashboard' icon='element-11' title='Captured Data' fontIcon='bi-app-indicator'/>
+      <SidebarMenuItem to='/dashboard' icon='element-11' title='Home' fontIcon='bi-app-indicator'/>
 
       <div className='menu-item'>
         <div className='menu-content pt-8 pb-2'>
@@ -16,7 +16,16 @@ const SidebarMenuMain = () => {
         </div>
       </div>
 
-      <SidebarMenuItemWithSub to='/crafted/pages' title='Scanner Setup' fontIcon='bi-archive' icon='element-plus'>
+      <SidebarMenuItemWithSub to='/crafted/pages' title='Scanner Bot' fontIcon='bi-archive' icon='element-plus'>
+
+        {/* <SidebarMenuItem to='/crafted/pages/wizards' title='Scan Scope' hasBullet={true}/> */}
+        <SidebarMenuItem to='crafted/pages/wizards/horizontal' title='Scan Scope' hasBullet={true}/>
+        <SidebarMenuItem to='/crafted/pages/profile' title='Scan History' hasBullet={true}/>
+
+      </SidebarMenuItemWithSub>
+
+
+      <SidebarMenuItemWithSub to='/crafted/pages' title='Trading Bot' fontIcon='bi-archive' icon='element-plus'>
 
         {/* <SidebarMenuItem to='/crafted/pages/wizards' title='Scan Scope' hasBullet={true}/> */}
         <SidebarMenuItem to='crafted/pages/wizards/horizontal' title='Scan Scope' hasBullet={true}/>

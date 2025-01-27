@@ -96,7 +96,7 @@ const CreateAppModal = ({show, handleClose}: Props) => {
       backdrop={true}
     >
       <div className='modal-header'>
-        <h2>Create App</h2>
+        <h2>Create Appcc</h2>
         {/* begin::Close */}
         <div className='btn btn-sm btn-icon btn-active-color-primary' onClick={handleClose}>
           <KTIcon className='fs-1' iconName='cross' />
